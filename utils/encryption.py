@@ -13,6 +13,8 @@ def encrypt_data(data: bytes, password: str) -> bytes:
     iv = get_random_bytes(16)
     cipher = AES.new(key, AES.MODE_CBC, iv)
     ciphertext = cipher.encrypt(pad(data, AES.block_size))
+    payload = salt + iv + ciphertext
+    print(f"[INFO] Total payload embedded: {len(payload)} bytes")
     return salt + iv + ciphertext  # total: 16 (salt) + 16 (IV) + ciphertext
 
 def decrypt_data(data: bytes, password: str) -> bytes:
