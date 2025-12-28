@@ -54,10 +54,13 @@ pip install -r requirements.txt
 1. Place PNG cover images into: `samples/input/`
 2. Place a secret message file: `samples/secret/message.txt`
 3. Set your password in `config.py`:
+
 ```python
 PASSWORD = "MyStrongPassword123!"
 ```
+
 4. Run the tool:
+
 ```bash
 python main.py
 ```
@@ -68,6 +71,7 @@ python main.py
 ---
 
 ## 📊 Output Sample (printed per image)
+
 ```
 [*] Processing image1.png...
     → PSNR: 47.25 dB | MSE: 0.76 | Saved: outputs/recovered_image1.txt
@@ -76,25 +80,22 @@ python main.py
 ---
 
 ## 📌 Limitations
+
 - Works best with lossless formats: **PNG** or **BMP**
 - Avoid using JPEG due to lossy compression corrupting LSB bits
 - Each image must be large enough to embed your encrypted message
 
 ---
 
-## 🧠 Future Ideas
-- GUI with PyQt5 or Tkinter
-- Password prompt via CLI
-- Drag-and-drop image UI
-- Output evaluation logs to CSV
-
 ---
 
 ## 👨‍💻 Author
-- Developed by [Your Name Here]
+
+- Developed by Risko
 - Contributions, issues, and stars are welcome on GitHub ⭐
 
 ---
 
 ## 📄 License
+
 This project is licensed under the MIT License.
