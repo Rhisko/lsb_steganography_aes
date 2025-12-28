@@ -1,0 +1,5 @@
+SECRET_PATH = "samples/secret/message.txt"
+INPUT_FOLDER = "samples/input"
+STEGO_FOLDER = "samples/stego"
+OUTPUT_FOLDER = "outputs"
+PASSWORD = "MyStrongPassword123!"
